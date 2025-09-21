@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libin O.K. - Recruiter Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Page Load Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Expand/Collapse Transition for Case Study */
+        .case-study-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .case-study-details.expanded {
+            max-height: 1500px;
+            /* A large value to accommodate content */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 leading-relaxed flex items-center justify-center min-h-screen p-4 sm:p-8">
+    <div class="main-card bg-white rounded-3xl shadow-xl overflow-hidden max-w-4xl w-full p-6 sm:p-10 fade-in-up">
+        <div class="flex flex-col items-center mb-10 gap-6 sm:flex-row sm:items-start sm:gap-10">
+            <img src="https://placehold.co/192x192/0077B6/FFFFFF?text=LOK" alt="Libin O.K. Profile Picture"
+                class="w-32 h-32 sm:w-48 sm:h-48 rounded-full object-cover shadow-md transition-transform duration-300 hover:scale-105">
+            <div class="text-center sm:text-left">
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-1">Libin O.K.</h1>
+                <h2 class="text-xl sm:text-2xl font-semibold text-gray-600 mb-4">Dynamic and Results-Oriented Recruiter
+                </h2>
+                <p class="text-base sm:text-lg text-gray-500 max-w-2xl">
+                    I am a Talent Acquisition professional with over 8 years of extensive experience in both tech and
+                    non-tech hiring. My career has been focused on end-to-end recruitment, headhunting, and strategic
+                    sourcing. Over the last five years, I played a key role in a B2B SaaS fintech startup, helping to
+                    scale the team from 100 to 600 employees. I specialize in leadership and niche hiring, market
+                    mapping, and leveraging advanced search techniques to find top talent.
+                </p>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-6 mt-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Contact & Connect</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div
+                    class="flex items-center gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <a href="mailto:libinokmkd@gmail.com"
+                        class="text-gray-600 transition-colors duration-300 hover:text-blue-600">libinokmkd@gmail.com</a>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span class="text-gray-600">7204234182 / 9656473773</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    <a href="https://www.linkedin.com/in/libinok" target="_blank"
+                        class="text-gray-600 transition-colors duration-300 hover:text-blue-600">www.linkedin.com/in/libinok</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-6 mt-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Key Achievements</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div
+                    class="flex items-start gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 text-gray-900 mt-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="text-lg text-gray-700">
+                        Achieved a consistent joining ratio of 70% over eight quarters, with a peak of 90%.
+                    </p>
+                </div>
+                <div
+                    class="flex items-start gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 text-gray-900 mt-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    <p class="text-lg text-gray-700">
+                        Recognized by founders for building the Enterprise Sales team from the ground up.
+                    </p>
+                </div>
+                <div
+                    class="flex items-start gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 text-gray-900 mt-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                    </svg>
+                    <p class="text-lg text-gray-700">
+                        Received appreciation from hiring managers for filling niche engineering roles on time.
+                    </p>
+                </div>
+                <div
+                    class="flex items-start gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 text-gray-900 mt-0.5"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M3 6a3 3 0 013-3h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.586l-4.707 4.707a1 1 0 01-1.414 0l-4.707-4.707A1.998 1.998 0 013 12V6zm8-3V1h2v2h-2zm-2 2V3h2v2H9z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="text-lg text-gray-700">
+                        Drove team accountability and ownership in meeting recruitment deadlines.
+                    </p>
+                </div>
+                <div
+                    class="flex items-start gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 text-gray-900 mt-0.5"
+                        fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M7 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V4a1 1 0 00-1-1H7zM4 9a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H5a1 1 0 01-1-1v-1zM11 9a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H12a1 1 0 01-1-1V9zM7 9a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H8a1 1 0 01-1-1V9zM4 12a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H5a1 1 0 01-1-1v-1zM11 12a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H12a1 1 0 01-1-1v-1zM7 12a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H8a1 1 0 01-1-1v-1zM4 15a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H5a1 1 0 01-1-1v-1zM11 15a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H12a1 1 0 01-1-1v-1zM7 15a1 1 0 011-1h.01a1 1 0 01.99 1v1a1 1 0 01-.99 1H8a1 1 0 01-1-1v-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="text-lg text-gray-700">
+                        Delivered transparent, data-driven reports to key stakeholders to ensure strategic alignment.
+                    </p>
+                </div>
+                <div
+                    class="flex items-start gap-3 bg-gray-50 p-4 rounded-xl shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 flex-shrink-0 text-gray-900 mt-0.5"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="M13 6a3 3 0 100-6 3 3 0 000 6zM6 10a4 4 0 100-8 4 4 0 000 8zM18 13a2 2 0 100-4 2 2 0 000 4zM10 16a6 6 0 100-12 6 6 0 000 12zM3 17a3 3 0 100-6 3 3 0 000 6z" />
+                    </svg>
+                    <p class="text-lg text-gray-700">
+                        Contributed to building teams from 0 to 1, establishing a strong foundation for business
+                        scaling.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-6 mt-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center sm:text-left">Featured Case Study</h3>
+            <div
+                class="p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">The Challenge: Rapid Scaling of a Critical Sales Team
+                </h4>
+                <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                    <p class="font-semibold text-lg text-gray-800">
+                        A B2B SaaS fintech startup had aggressive revenue goals that were entirely dependent on building
+                        a high-performing Enterprise Sales team from scratch. My mission was to recruit 25 top-tier
+                        sales professionals in a highly competitive market, with a strict timeline and no established
+                        hiring pipeline.
+                    </p>
+                </div>
+                <button id="toggleCaseStudy"
+                    class="mt-4 w-full text-center text-blue-600 font-bold py-2 rounded-lg transition-colors duration-300 hover:bg-gray-100 flex justify-center items-center gap-2">
+                    Read Full Case Study
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="caseStudyDetails" class="case-study-details space-y-8 mt-6">
+                <div class="p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">My Strategic Blueprint</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <span class="text-4xl">🔍</span>
+                            <h5 class="text-lg font-bold mt-2">Market Mapping & Competitor Analysis</h5>
+                            <p class="text-gray-600 text-sm">
+                                I began by mapping the market, identifying top competitors and key talent pools to build
+                                a strategic list of potential candidates. This proactive approach helped me bypass the
+                                saturated job boards.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-4xl">🎯</span>
+                            <h5 class="text-lg font-bold mt-2">Targeted Headhunting</h5>
+                            <p class="text-gray-600 text-sm">
+                                I used a combination of **Boolean search/Google X-ray** and **social media hiring** to
+                                directly engage with passive candidates on platforms like LinkedIn, GitHub, and Stack
+                                Overflow. This was crucial for finding specialized talent.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-4xl">🤝</span>
+                            <h5 class="text-lg font-bold mt-2">Founder Alignment</h5>
+                            <p class="text-gray-600 text-sm">
+                                I held deep-dive meetings with company founders to align on every detail, from the
+                                specific technical skills and cultural fit to the projected revenue impact of each hire.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">The Execution in Action</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl flex-shrink-0">📞</span>
+                            <div>
+                                <h5 class="text-lg font-bold">Rigorous Candidate Screening</h5>
+                                <p class="text-gray-600">
+                                    I went beyond just resumes to evaluate a candidate's **stability, past achievements,
+                                    and cultural fit**. This meticulous process was key to our success and reduced offer
+                                    drops to a minimum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl flex-shrink-0">📊</span>
+                            <div>
+                                <h5 class="text-lg font-bold">Data-Driven Pipeline Management</h5>
+                                <p class="text-gray-600">
+                                    I provided **transparent, data-driven reports** to key stakeholders in daily
+                                    meetings. This gave them real-time visibility into our pipeline and progress,
+                                    ensuring strategic alignment and trust throughout the process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">The Result: Impact and Recognition</h4>
+                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <div class="flex items-start gap-2 mb-1">
+                            <span class="text-xl text-green-600">✔</span>
+                            <p class="font-bold text-lg text-green-700">
+                                Successfully recruited **25 highly-qualified Enterprise Sales professionals**, building
+                                the team from the ground up and contributing directly to business scaling.
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-2 mb-1">
+                            <span class="text-xl text-green-600">✔</span>
+                            <p class="font-bold text-lg text-green-700">
+                                Achieved a consistent **70% joining ratio** over eight quarters, peaking at 90%, proving
+                                the quality of my candidate engagement and offer negotiation skills.
+                            </p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-xl text-green-600">✔</span>
+                            <p class="font-bold text-lg text-green-700">
+                                Earned **direct recognition from the company founders** and hiring managers for speed,
+                                efficiency, and my ability to fill critical, niche roles on time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-10 mt-10">
+            <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-lg fade-in-up">
+                <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center sm:text-left">Skills & Expertise</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div
+                        class="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                            <span class="text-blue-600 text-2xl">💡</span> Core Competencies
+                        </h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>End-to-End Recruitment</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Niche & Leadership Hiring</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Market Mapping & Research</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Team Leadership & Mentorship</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Stakeholder Management</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Offer Negotiation & Follow-up</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                            <span class="text-blue-600 text-2xl">🌐</span> Hiring & Domain Expertise
+                        </h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>**Tech:** Java, C++, .Net, PHP, Bootstrap, Angular, System Admin</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>**Non-Tech:** Sales, Marketing, HR, Finance, Legal, Customer Success</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>**Product:** Manager, UI/UX Designer, Business Analyst</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Full-cycle Hiring</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+                            <span class="text-blue-600 text-2xl">🛠️</span> Sourcing & Tools
+                        </h4>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Headhunting</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Social Media Hiring</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Boolean & X-Ray Search</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-blue-600 font-bold mt-1 flex-shrink-0">✔</span>
+                                <span>Job Portal Management</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-10 mt-10">
+            <div class="bg-blue-50 p-6 sm:p-10 rounded-3xl shadow-lg fade-in-up">
+                <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center sm:text-left">Thought Leadership: The
+                    Psychology of the Quality Recruitment Funnel</h3>
+                <div class="space-y-8 text-gray-700">
+                    <p class="text-lg">In an era defined by speed and volume, the most impactful recruiters operate on a
+                        simple principle: **Quality is a result of intention, not accident**. For any team looking to
+                        build a sustainable talent pipeline, the focus must shift from a transactional process to a
+                        relationship-based strategy. Here are a few key psychological shifts that can transform your
+                        recruitment efforts:</p>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                            <span
+                                class="text-blue-600 text-3xl transition-transform duration-200 hover:rotate-6">🤝</span>
+                            The First Call as a Relationship-Builder
+                        </h4>
+                        <div class="space-y-4">
+                            <p>Forget the quick-fire questions. The initial conversation with a candidate is not a
+                                screening; it’s a crucial opportunity to build trust and rapport. By investing an extra
+                                five minutes to understand a candidate's career story and motivations, you can:</p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 font-bold flex-shrink-0 mt-0.5">✔</span>
+                                    <div>
+                                        <span class="font-bold">Increase Offer Acceptance:</span> When a candidate feels
+                                        heard and valued, they are more likely to accept an offer because they trust
+                                        you've found a genuine match for them.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 font-bold flex-shrink-0 mt-0.5">✔</span>
+                                    <div>
+                                        <span class="font-bold">Boost Referrals:</span> A positive experience, even for
+                                        a non-hire, turns a candidate into a brand advocate. This leads to high-quality,
+                                        passive referrals from people who believe in your process.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                            <span
+                                class="text-blue-600 text-3xl transition-transform duration-200 hover:rotate-6">🧑‍⚖️</span>
+                            Mindset: From "Gatekeeper" to "Talent Advocate"
+                        </h4>
+                        <div class="space-y-4">
+                            <p>The traditional recruiter role is that of a gatekeeper, filtering out unqualified
+                                candidates. A modern, effective recruiter operates as a talent advocate. This means you
+                                are not only assessing candidates for the job but also representing their best interests
+                                to the hiring team. This approach is key to:</p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 font-bold flex-shrink-0 mt-0.5">✔</span>
+                                    <div>
+                                        <span class="font-bold">Building a Genuine Network:</span> By advocating for
+                                        great talent, you build a professional reputation for integrity. Candidates will
+                                        trust you and become a part of your long-term network, opening doors to future
+                                        placements and quality referrals.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 font-bold flex-shrink-0 mt-0.5">✔</span>
+                                    <div>
+                                        <span class="font-bold">Improving Hiring Manager Trust:</span> When you present
+                                        a candidate you genuinely believe in and can articulate their value beyond the
+                                        resume, you become a trusted partner to hiring managers.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                            <span
+                                class="text-blue-600 text-3xl transition-transform duration-200 hover:rotate-6">🎯</span>
+                            Prioritizing Quality Over Quantity
+                        </h4>
+                        <div class="space-y-4">
+                            <p>It's tempting to measure success by the number of interviews scheduled. However, this
+                                often leads to a bloated funnel and wasted time. Instead, focus on meaningful engagement
+                                and a targeted approach. A smaller, higher-quality talent pool will:</p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 font-bold flex-shrink-0 mt-0.5">✔</span>
+                                    <div>
+                                        <span class="font-bold">Increase Conversion Rates:</span> A well-qualified
+                                        candidate who has been thoughtfully engaged is far more likely to convert to a
+                                        hire, improving your team's overall efficiency.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 font-bold flex-shrink-0 mt-0.5">✔</span>
+                                    <div>
+                                        <span class="font-bold">Improve Retention:</span> A quality match, based on both
+                                        skill and cultural alignment, leads to longer employee tenure and a stronger
+                                        team.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-10 p-6 sm:p-8 rounded-3xl bg-gray-900 text-gray-200 shadow-xl w-full max-w-4xl fade-in-up">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+                <div class="space-y-2">
+                    <h4 class="text-xl font-bold text-white">Ready to Elevate Your Team's Talent?</h4>
+                    <p class="text-sm text-gray-400">Let's connect and discuss how my expertise can support your hiring
+                        goals.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="mailto:libinokmkd@gmail.com"
+                        class="flex items-center gap-2 text-gray-200 hover:text-blue-500 transition-colors duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/libinok" target="_blank"
+                        class="flex items-center gap-2 text-gray-200 hover:text-blue-500 transition-colors duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.765s.784-1.765 1.75-1.765 1.75.79 1.75 1.765-.783 1.765-1.75 1.765zm13.5 12.268h-3v-5.604c0-3.368-4-3.585-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm text-gray-500">
+                &copy; 2025 Libin O.K. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('toggleCaseStudy').addEventListener('click', function () {
+            const details = document.getElementById('caseStudyDetails');
+            details.classList.toggle('expanded');
+
+            const button = this;
+            const isExpanded = details.classList.contains('expanded');
+            if (isExpanded) {
+                button.innerHTML = `Hide Case Study <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>`;
+            } else {
+                button.innerHTML = `Read Full Case Study <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>`;
+            }
+        });
+    </script>
+</body>
+
+</html>
